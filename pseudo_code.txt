@@ -1,0 +1,53 @@
+a method that returns the sum of two integers
+
+
+START
+
+DEFINE METHOD - two arguments, num1 and num2 
+
+SET result variable equal to num1 plus num 2
+
+PRINT result
+
+END
+
+a method that takes an array of strings, and returns a string that is all those strings concatenated together
+
+
+START
+
+DEFINE METHOD - accepts array of strings 
+
+SET result - iterate through array and mak eresult equal to result + X (initialize result?)
+
+PRINT result
+END
+
+START 
+
+DEFINE METHOD - accepts an array of integers
+
+iterate through array 
+
+if X.odd?
+array.push(x)
+
+END
+
+DEFINE METHOD - accepts a string
+
+(0.string.length).final_all
+
+SET new array = occurences
+
+PRINT new_array[2]
+
+END
+
+DEFINE merge
+
+SET variable to result of zipping arrays
+
+flatten varaible array
+
+END
