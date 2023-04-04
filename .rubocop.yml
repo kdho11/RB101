@@ -5,8 +5,7 @@ AllCops:
   DisplayCopNames: true
   # Display Extra details
   ExtraDetails: true
-  # Style guide URLs are not displayed in offense messages by default. 
-Change
+  # Style guide URLs are not displayed in offense messages by default. Change
   # behavior by overriding DisplayStyleGuide, or by giving the
   # -S/--display-style-guide option.
   DisplayStyleGuide: true
@@ -26,22 +25,19 @@ Style/CommandLiteral:
   Enabled: true
   # backticks: Always use backticks.
   # percent_x: Always use %x.
-  # mixed: Use backticks on single-line commands, and %x on multi-line 
-commands.
+  # mixed: Use backticks on single-line commands, and %x on multi-line commands.
   EnforcedStyle: mixed
   SupportedStyles:
     - backticks
     - percent_x
     - mixed
-  # If false, the cop will always recommend using %x if one or more 
-backticks
+  # If false, the cop will always recommend using %x if one or more backticks
   # are found in the command string.
   AllowInnerBackticks: false
 
 Style/CommentAnnotation:
   Description: >-
-    Checks formatting of special comments (TODO, FIXME, OPTIMIZE, HACK, 
-REVIEW).
+    Checks formatting of special comments (TODO, FIXME, OPTIMIZE, HACK, REVIEW).
   Enabled: false
 
 Style/Documentation:
@@ -65,14 +61,12 @@ Style/FrozenStringLiteralComment:
   Description: Require the addition of the frozen string literal comment.
 
 Style/GuardClause:
-  Description: Check for conditionals that can be replaced with guard 
-clauses.
+  Description: Check for conditionals that can be replaced with guard clauses.
   Enabled: false
 
 Style/HashSyntax:
   Description: >-
-                 Prefer Ruby 1.9 hash syntax { a: 1, b: 2 } over 1.8 
-syntax
+                 Prefer Ruby 1.9 hash syntax { a: 1, b: 2 } over 1.8 syntax
                  { :a => 1, :b => 2 }.
   Enabled: true
   EnforcedStyle: ruby19_no_mixed_keys
@@ -112,25 +106,21 @@ Style/NegatedWhile:
   Enabled: false
 
 Style/Next:
-  Description: 'Use `next` to skip iteration instead of a condition at the 
-end.'
+  Description: 'Use `next` to skip iteration instead of a condition at the end.'
   Enabled: false
 
 Style/NumericLiterals:
-  Description: Add underscores to large numeric literals to improve their 
-readability.
+  Description: Add underscores to large numeric literals to improve their readability.
   Enabled: false
 
 Style/NumericPredicate:
   Description: >-
-                 Checks for the use of predicate- or comparison methods 
-for
+                 Checks for the use of predicate- or comparison methods for
                  numeric comparisons.
   Enabled: false
 
 Style/OneLineConditional:
-  Description: Favor the ternary operator(?:) over if/then/else/end 
-constructs.
+  Description: Favor the ternary operator(?:) over if/then/else/end constructs.
   Enabled: false
 
 Naming/BinaryOperatorParameterName:
@@ -177,8 +167,7 @@ Style/RegexpLiteral:
 
 Style/SafeNavigation:
   Description: >-
-                  This cop transforms usages of a method call safeguarded 
-by
+                  This cop transforms usages of a method call safeguarded by
                   a check for the existance of the object to
                   safe navigation (`&.`).
   Enabled: false
@@ -204,8 +193,7 @@ Style/SymbolArray:
   Enabled: false
 
 Style/WhileUntilModifier:
-  Description: Favor modifier while/until usage when you have a 
-single-line body.
+  Description: Favor modifier while/until usage when you have a single-line body.
   Enabled: false
 
 Style/WordArray:
@@ -249,19 +237,15 @@ Lint/LiteralInInterpolation:
   Enabled: true
 
 Layout/EmptyLinesAroundAttributeAccessor:
-  Description: 'Checks for a newline after an attribute accessor or a 
-group of them.'
+  Description: 'Checks for a newline after an attribute accessor or a group of them.'
   Enabled: true
 
 Layout/SpaceAroundMethodCallOperator:
-  Description: 'Checks method call operators to not have spaces around 
-them.'
+  Description: 'Checks method call operators to not have spaces around them.'
   Enabled: true
 
 Lint/DeprecatedOpenSSLConstant:
-  Description: 'Algorithmic constants for OpenSSL::Cipher and 
-OpenSSL::Digest deprecated since OpenSSL version 2.2.0. Prefer passing a 
-string instead.'
+  Description: 'Algorithmic constants for OpenSSL::Cipher and OpenSSL::Digest deprecated since OpenSSL version 2.2.0. Prefer passing a string instead.'
   Enabled: false
 
 Lint/MixedRegexpCaptureTypes:
@@ -269,33 +253,27 @@ Lint/MixedRegexpCaptureTypes:
   Enabled: false
 
 Lint/RaiseException:
-  Description: 'Checks for raise or fail statements which are raising 
-Exception class.'
+  Description: 'Checks for raise or fail statements which are raising Exception class.'
   Enabled: false
 
 Lint/StructNewOverride:
-  Description: 'Checks unexpected overrides of the Struct built-in methods 
-via Struct.new'
+  Description: 'Checks unexpected overrides of the Struct built-in methods via Struct.new'
   Enabled: false
 
 Style/ExponentialNotation:
-  Description: 'Enforces consistency when using exponential notation for 
-numbers in the code'
+  Description: 'Enforces consistency when using exponential notation for numbers in the code'
   Enabled: false
 
 Style/HashTransformKeys:
-  Description: 'Tries to use a simpler & faster call to transform_keys 
-where possible'
+  Description: 'Tries to use a simpler & faster call to transform_keys where possible'
   Enabled: false
 
 Style/HashTransformValues:
-  Description: 'Tries to use a simpler & faster call to transform_values 
-where possible'
+  Description: 'Tries to use a simpler & faster call to transform_values where possible'
   Enabled: false
 
 Style/RedundantRegexpCharacterClass:
-  Description: 'Checks for unnecessary single-element Regexp character 
-classes.'
+  Description: 'Checks for unnecessary single-element Regexp character classes.'
   Enabled: false
 
 Style/RedundantRegexpEscape:
@@ -303,8 +281,7 @@ Style/RedundantRegexpEscape:
   Enabled: false
 
 Style/SlicingWithRange:
-  Description: 'Checks that arrays are sliced with endless ranges instead 
-of ary[start..-1]'
+  Description: 'Checks that arrays are sliced with endless ranges instead of ary[start..-1]'
   Enabled: false
 
 Style/FormatStringToken:
