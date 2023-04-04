@@ -1,15 +1,9 @@
-# ask the user for two numbers
-# ask the user for an operation to perform
-# perform the operation on the two numbers
-# output the result
 def prompt(message)
-  Kernel.puts("=> #{message}")
+  puts("=> #{message}")
 end
 
 def valid_number?(num)
 	num == num.to_i.to_s 
-	if true
-		num
 end
 
 def operation_to_message(op)
@@ -44,7 +38,7 @@ loop do # main loop
   number1 = ''
   loop do
     prompt("What's the first number?")
-    number1 = Kernel.gets().chomp()
+    number1 = gets().chomp()
       if valid_number?(number1)
         break
       else
@@ -100,7 +94,6 @@ loop do # main loop
   break unless answer.downcase.start_with?('y')
 	end
 
-end
 
-prompt("Thank you for using the calculator!")
+# prompt("Thank you for using the calculator!")
 
