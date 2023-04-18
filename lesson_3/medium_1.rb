@@ -30,14 +30,39 @@ str = "The Flintstones Rock!"
 
 # p factors(8)
 
-def rolling_buffer1(buffer, max_buffer_size, new_element)
-  buffer << new_element
-  buffer.shift if buffer.size > max_buffer_size
-  buffer
+# munsters = {
+#   "Herman" => { "age" => 32, "gender" => "male" },
+#   "Lily" => { "age" => 30, "gender" => "female" },
+#   "Grandpa" => { "age" => 402, "gender" => "male" },
+#   "Eddie" => { "age" => 10, "gender" => "male" },
+#   "Marilyn" => { "age" => 23, "gender" => "female"}
+# }
+
+# def mess_with_demographics(demo_hash)
+#   demo_hash.values.each do |family_member|
+#     family_member["age"] += 42
+#     family_member["gender"] = "other"
+#   end
+# end
+
+# mess_with_demographics(munsters)
+
+# p munsters
+
+# def rps(fist1, fist2)
+#   if fist1 == "rock"
+#     (fist2 == "paper") ? "paper" : "rock"
+#   elsif fist1 == "paper"
+#     (fist2 == "scissors") ? "scissors" : "paper"
+#   else
+#     (fist2 == "rock") ? "rock" : "scissors"
+#   end
+# end
+
+def foo(param = "no")
+  "yes"
 end
 
-def rolling_buffer2(input_array, max_buffer_size, new_element)
-  buffer = input_array + [new_element]
-  buffer.shift if buffer.size > max_buffer_size
-  buffer
+def bar(param = "no")
+  param == "no" ? "yes" : "no"
 end
