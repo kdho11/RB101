@@ -40,9 +40,10 @@ puts a.fetch(7) { |index| index**2 } #49
 
 #7 parent class
 s = 'abc'
-puts s.public_methods(false).inspect
+# puts s.public_methods(false).inspect
 
 #8
 a = [5, 9, 3, 11]
 puts a.min(2)
+
 
